@@ -1,21 +1,27 @@
-import 'package:fl_components/routes/app_routes.dart';
-import 'package:fl_components/screens/screens.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
+class Listview2Screen extends StatelessWidget {
+  final options = const ['Targaryen', 'Stark', 'Lannister', 'Baratheon'];
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const Listview2Screen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Material App',
-      //home: const Listview2Screen(),
-      initialRoute: AppRoutes.initialRoute,
-      routes: AppRoutes.routes,
-      onGenerateRoute: AppRoutes.onGenerateRoute,
-    );
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('Listview Tipo 2'),
+          backgroundColor: Colors.blueAccent,
+        ),
+        body: ListView.separated(
+            itemBuilder: (context, index) => ListTile(
+                  trailing: Icon(Icons.arrow_forward_ios_outlined),
+                  title: Text(options[index]),
+                  onTap: () {
+                    final casa = options[index];
+                    print(casa);
+                  },
+                ),
+            separatorBuilder: (context, index) => const Divider(),
+            itemCount: options.length));
   }
 }
