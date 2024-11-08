@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class AppRoutes {
   static const initialRoute = 'home';
 
-  static final MenuOptions = <MenuOption>{
+  static final MenuOptions = <MenuOption>[
     MenuOption(
         route: 'home',
         icon: Icons.house_rounded,
@@ -15,23 +15,23 @@ class AppRoutes {
         route: 'listview1',
         icon: Icons.list_alt,
         name: 'List View 1',
-        screen: const HomeScreen()),
+        screen: const Listview1Screen()),
     MenuOption(
         route: 'listview2',
         icon: Icons.list_alt,
         name: 'List View 2',
-        screen: const HomeScreen()),
+        screen: const Listview2Screen()),
     MenuOption(
         route: 'alert',
         icon: Icons.add_alert,
         name: 'Alert',
-        screen: const HomeScreen()),
+        screen: const AlertScreen()),
     MenuOption(
         route: 'card',
         icon: Icons.card_giftcard,
         name: 'Card',
-        screen: const HomeScreen()),
-  };
+        screen: const CardScreen()),
+  ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
     Map<String, Widget Function(BuildContext)> appRoutes = {};
