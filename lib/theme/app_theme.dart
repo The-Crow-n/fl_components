@@ -8,10 +8,6 @@ class AppTheme {
       // Color primario para la aplicación
       //primaryColor: Colors.deepOrange,
       // AppBar Theme
-      appBarTheme: const AppBarTheme(
-        color: Colors.deepOrange,
-      ),
-      listTileTheme: const ListTileThemeData(
-        iconColor: Colors.deepPurple,
-      ));
+      appBarTheme: const AppBarTheme(color: primary),
+      listTileTheme: const ListTileThemeData(iconColor: primary));
 }
