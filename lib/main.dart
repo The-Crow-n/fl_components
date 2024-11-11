@@ -10,21 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Material App',
-        //home: const Listview2Screen(),
-        initialRoute: AppRoutes.initialRoute,
-        routes: AppRoutes.getAppRoutes(),
-        onGenerateRoute: AppRoutes.onGenerateRoute,
-        theme: ThemeData.light().copyWith(
-            // Color primario para la aplicación
-            primaryColor: Colors.deepOrange,
-            // AppBar Theme
-            appBarTheme: AppBarTheme(
-              color: Colors.deepOrange,
-            ),
-            listTileTheme: ListTileThemeData(
-              iconColor: Colors.deepPurple,
-            )));
+      debugShowCheckedModeBanner: false,
+      title: 'Material App',
+      //home: const Listview2Screen(),
+      initialRoute: AppRoutes.initialRoute,
+      routes: AppRoutes.getAppRoutes(),
+      onGenerateRoute: AppRoutes.onGenerateRoute,
+    );
   }
 }
