@@ -24,7 +24,10 @@ class CustomCardTipo1 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               TextButton(onPressed: () {}, child: const Text('Cancelar')),
-              TextButton(onPressed: () {}, child: const Text('Aceptar')),
+              Padding(
+                  padding: const EdgeInsets.only(right: 8.0),
+                  child: TextButton(
+                      onPressed: () {}, child: const Text('Aceptar'))),
             ],
           )
         ],
