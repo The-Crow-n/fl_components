@@ -21,6 +21,7 @@ class CustomCardTipo1 extends StatelessWidget {
                 'Incididunt irure aute consectetur nostrud sunt culpa est esse sint labore in commodo. Velit officia voluptate nulla nulla commodo aliquip consectetur do eu exercitation cillum ut est veniam. Ex culpa labore laborum reprehenderit aliqua officia laborum in sunt ipsum excepteur est.'),
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
               TextButton(onPressed: () {}, child: const Text('Cancelar')),
               TextButton(onPressed: () {}, child: const Text('Aceptar')),
