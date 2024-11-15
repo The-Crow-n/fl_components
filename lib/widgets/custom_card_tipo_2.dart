@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 
 class CustomCardTipo2 extends StatelessWidget {
   final String imageUrl;
+  final String? nombre;
 
-  const CustomCardTipo2({
-    super.key, required this.imageUrl
-  });
+  const CustomCardTipo2({super.key, required this.imageUrl, this.nombre});
 
   @override
   Widget build(BuildContext context) {
@@ -23,10 +22,11 @@ class CustomCardTipo2 extends StatelessWidget {
             fadeInDuration: const Duration(milliseconds: 1500),
             fadeOutDuration: const Duration(milliseconds: 800),
           ),
+          if(nombre != null)
           Container(
             alignment: AlignmentDirectional.centerEnd,
             padding: const EdgeInsets.only(top: 15, bottom: 15, right: 8),
-            child: const Text('Albaricoque'),
+            child: Text(nombre ?? ''),
           )
         ],
       ),
