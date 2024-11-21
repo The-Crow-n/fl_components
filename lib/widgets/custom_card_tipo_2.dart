@@ -14,7 +14,7 @@ class CustomCardTipo2 extends StatelessWidget {
       child: Column(
         children: <Widget>[
           FadeInImage(
-            image: NetworkImage(this.imageUrl),
+            image: NetworkImage(imageUrl),
             placeholder: const AssetImage('assets/jar-loading.gif'),
             width: double.infinity,
             height: 250,
