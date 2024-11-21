@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:fl_components/routes/linux_routes.dart';
 
 class Listview1Screen extends StatelessWidget {
-  final options = const ['Targaryen', 'Stark', 'Lannister', 'Baratheon'];
+  final options = const ['Arch', 'Debian', 'Gentoo', 'NixOS'];
 
   const Listview1Screen({super.key});
 
@@ -13,14 +14,15 @@ class Listview1Screen extends StatelessWidget {
         ),
         body: ListView(
           children: [
-            ...options
-                .map(
-                  (e) => ListTile(
-                    trailing: const Icon(Icons.arrow_forward_ios_outlined),
-                    title: Text(e),
-                  ),
-                )
-                
+            ...options.map(
+              (e) => ListTile(
+                trailing: const Icon(Icons.arrow_forward_ios_outlined),
+                title: Text(e),
+                onTap: (){
+                  Navigator.pushNamed(context, )
+                },
+              ),
+            )
           ],
         ));
   }
