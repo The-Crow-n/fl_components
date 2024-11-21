@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fl_components/routes/linux_routes.dart';
+import 'package:fl_components/screens/screens.dart';
 
 
 class Listview2Screen extends StatelessWidget {

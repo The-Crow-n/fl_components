@@ -1,5 +1,5 @@
+import 'package:fl_components/routes/app_routes.dart';
 import 'package:flutter/material.dart';
-import 'package:fl_components/screens/screens.dart';
 
 class Listview1Screen extends StatelessWidget {
   final options = const ['Arch', 'Debian', 'Gentoo', 'NixOS'];
@@ -19,7 +19,7 @@ class Listview1Screen extends StatelessWidget {
                 trailing: const Icon(Icons.arrow_forward_ios_outlined),
                 title: Text(e),
                 onTap: (){
-                  Navigator.pushNamed(context, )
+                  Navigator.pushNamed(context, AppRoutes.LinuxOptions[options.indexOf(e)].route);
                 },
               ),
             )

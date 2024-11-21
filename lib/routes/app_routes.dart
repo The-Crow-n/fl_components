@@ -33,6 +33,29 @@ class AppRoutes {
         screen: const CardScreen()),
   ];
 
+  static final LinuxOptions = <MenuOption>[
+    MenuOption(
+        route: 'arch',
+        icon: Icons.house_rounded,
+        name: 'Arch',
+        screen: const ArchScreen()),
+    MenuOption(
+        route: 'debian',
+        icon: Icons.list_alt,
+        name: 'Debian',
+        screen: const DebianScreen()),
+    MenuOption(
+        route: 'gentoo',
+        icon: Icons.list_alt,
+        name: 'Gentoo',
+        screen: const GentooScreen()),
+    MenuOption(
+        route: 'nixos',
+        icon: Icons.add_alert,
+        name: 'NixOS',
+        screen: const GentooScreen())
+  ];
+
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
     Map<String, Widget Function(BuildContext)> appRoutes = {};
 
