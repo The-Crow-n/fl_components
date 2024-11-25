@@ -11,7 +11,7 @@ class Listview1Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     String description = '';
     String imageURL = '';
-    
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Listview Tipo 1'),
@@ -23,24 +23,25 @@ class Listview1Screen extends StatelessWidget {
               // Assign values to description and imageURL based on 'e'
               switch (e) {
                 case 'Arch':
-                  description = 'A versatile rolling-release distro.';
-                  imageURL = 'assets/arch_logo.png';
+                  description =
+                      'Arch Linux es una distribución de Linux conocida por su enfoque minimalista, flexible y de "roling release" (actualización continua). A diferencia de otras distribuciones populares, Arch se basa en la filosofía de mantener el sistema lo más sencillo posible y ofrecer a los usuarios control total sobre su configuración.';
+                  imageURL =
+                      'https://live.mrf.io/statics/i/ps/www.muylinux.com/wp-content/uploads/2011/01/archlinux.png?width=1200&enable=upscale';
                   break;
                 case 'Debian':
                   description = 'A stable and well-known Linux distro.';
-                  imageURL = 'assets/debian_logo.png';
+                  imageURL = 'https://cdn.worldvectorlogo.com/logos/debian.svg';
                   break;
                 case 'Gentoo':
                   description = 'A source-based distro for advanced users.';
-                  imageURL = 'assets/gentoo_logo.png';
+                  imageURL =
+                      'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Gentoo_Linux_logo_matte.svg/458px-Gentoo_Linux_logo_matte.svg.png';
                   break;
                 case 'NixOS':
-                  description = 'A unique distro with declarative configuration.';
-                  imageURL = 'assets/nixos_logo.png';
-                  break;
-                default:
-                  description = 'Unknown Linux distribution';
-                  imageURL = 'assets/default_logo.png';
+                  description =
+                      'A unique distro with declarative configuration.';
+                  imageURL =
+                      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/NixOS_logo.svg/1280px-NixOS_logo.svg.png';
               }
 
               return ListTile(
@@ -51,10 +52,9 @@ class Listview1Screen extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (context) => LinuxScreen(
-                        title: e,
-                        description: description,
-                        imageURL: imageURL
-                      ),
+                          title: e,
+                          description: description,
+                          imageURL: imageURL),
                     ),
                   );
                 },
