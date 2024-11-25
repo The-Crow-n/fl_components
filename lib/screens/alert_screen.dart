@@ -5,12 +5,20 @@ class AlertScreen extends StatelessWidget {
 
   void displayDialog(BuildContext context) {
     showDialog(
-        barrierDismissible: true,
+        barrierDismissible: true, // Cuando está en false, no deja salir del diálogo clicando en el sombreado.
         context: context,
         builder: (context) {
           return const AlertDialog(
               title: Text('Alerta'),
-              content: Text('Este es el contenido del mensaje de alerta'));
+              content: Column(
+                mainAxisSize: MainAxisSize.min, // Si no se especifica, por defecto viene al máximo.
+                children: [
+                  Text('Este es el contenido del mensaje de alerta'),
+                  SizedBox(height: 10,),
+                  FlutterLogo(size: 100,)
+                ],
+              ),
+              );
         });
   }
 
