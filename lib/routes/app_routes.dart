@@ -1,4 +1,5 @@
 import 'package:fl_components/models/models.dart';
+import 'package:fl_components/screens/animated_screen.dart';
 import 'package:fl_components/screens/screens.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +36,12 @@ class AppRoutes {
         route: 'avatar',
         icon: Icons.person_2_rounded,
         name: 'Avatar',
-        screen: const AvatarScreen())
+        screen: const AvatarScreen()),
+    MenuOption(
+        route: 'animated',
+        icon: Icons.animation,
+        name: 'Animated',
+        screen: const AnimatedScreen())
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
