@@ -5,6 +5,7 @@ class AlertScreen extends StatelessWidget {
 
   void displayDialog(BuildContext context) {
     showDialog(
+        barrierDismissible: true,
         context: context,
         builder: (context) {
           return const AlertDialog(
