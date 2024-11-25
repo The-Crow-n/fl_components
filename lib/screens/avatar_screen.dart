@@ -11,8 +11,10 @@ class AvatarScreen extends StatelessWidget {
       actions: [
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: CircleAvatar(child: Text('PB'),
-          backgroundColor: Colors.lightGreen,
+          child: CircleAvatar(
+            child: Text('PB'),
+            //maxRadius: 120,
+            backgroundImage: NetworkImage('https://ih1.redbubble.net/image.2517271689.2840/raf,360x360,075,t,fafafa:ca443f4786.jpg'),
           ),
         )
       ],),
