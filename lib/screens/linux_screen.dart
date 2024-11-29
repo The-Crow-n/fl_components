@@ -17,7 +17,7 @@ class LinuxScreen extends StatelessWidget{
         body: ListView(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           children: [
-            CustomCardTipo2(imageUrl: this.imageURL, nombre: description)
+            CustomCardTipo2(imageUrl: imageURL, nombre: description)
           ],
         ));
   }

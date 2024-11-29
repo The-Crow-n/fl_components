@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 
 class AnimatedScreen extends StatefulWidget {
-  const AnimatedScreen({Key? key}) : super(key: key);
+  const AnimatedScreen({super.key});
 
   @override
   State<AnimatedScreen> createState() => _AnimatedScreenState();
@@ -25,7 +25,7 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Animated Container'),
+        title: const Text('Animated Container'),
       ),
       body: Center(
         child: AnimatedContainer(

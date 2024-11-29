@@ -32,7 +32,7 @@ class AppTheme {
         style: ElevatedButton.styleFrom(
           backgroundColor: primary,
           foregroundColor: Colors.white,
-          shape: StadiumBorder(),
+          shape: const StadiumBorder(),
           elevation: 5,
         )
       )
